@@ -1,0 +1,21 @@
+# Ignore Terraform files
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.*
+
+# Ignore log files
+*.log
+
+# Ignore environment and secret files
+.env
+*.pem
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
