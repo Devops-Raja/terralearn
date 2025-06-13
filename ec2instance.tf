@@ -16,8 +16,6 @@ provider "aws" {
 resource "aws_instance" "ec2instance" {
   ami           = "ami-0f918f7e67a3323f0" # Replace with a valid AMI ID for your region
   instance_type = "t2.micro"
-
-  tags = {
-    Name = "ec2freetier"
-  }
+  key_name      = "devopsraja" # Replace with your key pair name
+  subnet_id     = "subnet-0268fb40539332a05" # Replace with your subnet ID
 }
